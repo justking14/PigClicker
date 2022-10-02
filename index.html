@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+     <title>Game Engine</title>
+     <!-- Font -->
+     <link rel="preconnect" href="https://fonts.gstatic.com">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Ribeye&display=swap" rel="stylesheet">
+     <!-- Overworld styles -->
+     <link href="newGlobal.css" type="text/css" rel="stylesheet">
+     <link href="Battle.css" type="text/css" rel="stylesheet">
+     <link href="Menus.css" type="text/css" rel="stylesheet">
+     <link href="KeyboardMenu.css" type="text/css" rel="stylesheet">
+
+<style>
+     button {
+          width: 96px;
+          height: 96px;
+          font-size: 2rem;
+     }
+</style>
+
+</head>
+
+<body>
+     <div class="game-container" id="div1">
+          <p id="Counter" class="Counter noselect"> PIG CLICKER </p>
+          <p id="Score" class="Score noselect"> Score: 0 </p>
+          <button type="button" id="pigButton" class="buttonCentered"></button>
+          <canvas class="game-canvas" width="352" height="198" id="base-game"></canvas>
+     </div>
+
+     <!-- Scripts -->
+     <script src="Utils/Utils.js"></script>
+     <script src="Utils/DirectionInput.js"></script>
+     <script src="Utils/KeyPressListener.js"></script>
+
+     <script src="SubmissionMenu.js"></script>
+     <script src="KeyboardMenu.js"></script>
+
+     <script src="newOverworld.js"></script>
+     
+     <script src="init.js"></script>
+
+     
+
+</body>
+
+</html>

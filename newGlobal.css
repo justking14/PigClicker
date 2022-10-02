@@ -1,0 +1,94 @@
+:root {
+     --border-color: #291D4D;
+     --dialog-background: #FFF3B4;
+
+--menu-background: #ff71c4;
+     --menu-border-color: #A48465;
+     --menu-font-color: #3A160D;
+     --menu-selected-background: #7fc2ff;
+}
+
+* {
+     box-sizing: border-box;
+}
+
+body {
+     position: relative;
+     background: #333;
+     padding: 0;
+     margin: 0;
+     font-family: 'Ribeye', cursive;
+     font-size: large;
+}
+
+.Counter {
+     position: relative;
+     text-align: center;
+     color: #291D4D;
+     top: -5%;
+}
+
+.Score {
+     position: absolute;
+     text-align: center;
+     color: #291D4D;
+     bottom: 0;
+     left: 20%
+}
+
+.buttonCentered {
+     position: absolute;
+     left: 50%;
+     transform: translateX(-50%);
+     display: inline;
+     image-rendering: pixelated;
+     padding: 0;
+     border: none;
+     z-index: -1;
+     background: url(pig1.png);
+}
+
+.buttonCentered:disabled,
+.buttonCentered[disabled] {
+     background: url(pig1b.png);
+}
+
+.buttonCentered:enabled,
+.buttonCentered[enabled] {
+     background: url(pig1a.png);
+}
+
+.game-container {
+     position: absolute;
+     
+     background: #9ae2ff;
+
+     width: 352px;
+     height: 198px;
+     margin: 0 auto;
+     outline: 1px solid #fff;
+
+     transform-origin: left top;
+     transform: scale(3);
+     top: 0;
+     left: 0;
+}
+
+.game-container canvas {
+     image-rendering: pixelated;
+}
+.noselect {
+     -webkit-touch-callout: none;
+     /* iOS Safari */
+     -webkit-user-select: none;
+     /* Safari */
+     -khtml-user-select: none;
+     /* Konqueror HTML */
+     -moz-user-select: none;
+     /* Old versions of Firefox */
+     -ms-user-select: none;
+     /* Internet Explorer/Edge */
+     user-select: none;
+     /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
